@@ -1,42 +1,42 @@
-#include<stdio.h>//aqui e a biblioteca
-int main()//e a funcao principal
+#include<stdio.h>
+int main()
 {
-	float peso,altura,imc,x;//aqui declarei as variaveis
-	for(x=0;x<15;x++)//aqui comeca o ciclo de repeticoes 
+	float peso,altura,imc,x;//variaveis
+	for(x=0;x<15;x++)//ciclo de repeticoes 
 	{
-    printf("\nDados do Cliente",x+1);//aqui eu coloquei os dados do cliente para que toda que se repetir o ciclo aumente o numero 
-	printf("\nColeque seu peso:");//aqui eu coloquei oq o leitor vai ler
-	scanf("%f",&peso);//aqui e o que vai executar
+    printf("\nDados do Cliente",x+1);//Toda vez que repetir o ciclo aumenta o numero 
+	printf("\nColeque seu peso:");
+	scanf("%f",&peso);
 	printf("\nColoque sua altura:");
 	scanf("%f",&altura);
-	imc=peso/altura*altura;//aqui e a soma do peso vezes a altura
-    printf("seu imc foi:,%f",imc);//aqui eu coloquei o que ele vai ver com a soma da opera�ao de cima 
+	imc=peso/altura*altura;
+    printf("seu imc foi:,%f",imc); 
         	
-	if (imc <17)//aqui e a funcao que tem que ser menor de 17
+	if (imc <17)//Função 
 	{
 		printf("\nAbaixo de 17 muito abaixo do peso ");
 	}
-	else if (imc>=17 && imc <= 18.49)//esse aqui tem que ser maior 17 ou igual a 18.49
+	else if (imc>=17 && imc <= 18.49)//Função
 	{
 		printf("\nEntre 17 e 18.49 abaixo do peso ");
 	}
-	else if (imc >=18.5 && imc <= 24.99)
+	else if (imc >=18.5 && imc <= 24.99)//Função
 	{
 	    printf("\nEntre 18.5 e 24.99 peso normal");	
 	}
-	else if(imc>=25 && imc <=29.99) 
+	else if(imc>=25 && imc <=29.99)//Função
 	{
 		printf("\nEntre 25 e 29.99 acima do peso ");
 	}
-	else if(imc>=30 && imc <=34.99) 
+	else if(imc>=30 && imc <=34.99)//Função
 	{
 	    printf("\nEntre 30 e 34.99 obecidade 1");	
 	}
-	else if (imc>=30 && imc<=39.99)
+	else if (imc>=30 && imc<=39.99)//Função
 	{
 		printf("\nEntre 35 e 39.99 obecidade 2 severa");
 	}
-	else if (imc>40)
+	else if (imc>40)//Função
 	{
 		printf("\nAcima de 40 obesidade 3 morbida ");
 	}
